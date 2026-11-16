@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aprendo jugando</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    background: #f1f8ff;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(120deg, #54d6df, #8b9cf5);
+    text-align: center;
+    padding: 30px 15px;
+    color: white;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 5px;
+}
+
+header p {
+    font-size: 19px;
+}
+
+nav {
+    background: #ffcf66;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    display: inline-block;
+    margin: 6px;
+    color: #503c26;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #e45c77;
+}
+
+.portada {
+    text-align: center;
+    padding: 35px 15px;
+    background: #e4f9e9;
+}
+
+.portada .dibujo {
+    font-size: 65px;
+}
+
+.portada h2 {
+    color: #339b87;
+}
+
+.contenedor {
+    padding: 25px 15px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2.titulo {
+    text-align: center;
+    color: #5575cb;
+    font-size: 28px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 22px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px #ccd5e0;
+    border-bottom: 6px solid #8bd9d0;
+}
+
+.tarjeta .emoji {
+    font-size: 55px;
+}
+
+.tarjeta h3 {
+    color: #ed8b54;
+}
+
+.actividad {
+    background: white;
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px #ccd5e0;
+}
+
+button {
+    background: #ff9873;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:hover {
+    background: #ec7657;
+}
+
+.opcion {
+    background: #79b9ef;
+    min-width: 90px;
+}
+
+#resultado, .mensaje {
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+footer {
+    background: #648bd7;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #91c9eb;
+    border-radius: 10px;
+    font-size: 17px;
+    width: 130px;
+    text-align: center;
+}
+
+.separador {
+    background: #fff0bc;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌈 ¡Aprendo jugando! 📚</h1>
+    <p>Mi espacio educativo de primer grado</p>
+    <p>⭐ ¡Aprender es una aventura! ⭐</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#materias">Materias</a>
+    <a href="#actividades">Actividades</a>
+    <a href="#juegos">Juegos</a>
+</nav>
+
+<section class="portada" id="inicio">
+    <div class="dibujo">👧🏻 📖 🧒🏻</div>
+    <h2>¡Hola, pequeños estudiantes!</h2>
+    <p>Bienvenidos a un mundo lleno de colores,
+    aventuras y nuevos aprendizajes.</p>
+    <p>¡Vamos a descubrir cosas maravillosas!</p>
+</section>
+
+<!-- MATERIAS -->
+
+<section class="contenedor" id="materias">
+
+<h2 class="titulo">📚 Nuestras materias</h2>
+
+<div class="tarjetas">
+
+<div class="tarjeta">
+    <div class="emoji">🔤</div>
+    <h3>Lenguajes</h3>
+    <p>Aprendemos las vocales, el abecedario,
+    sílabas, palabras y cuentos.</p>
+</div>
+
+<div class="tarjeta">
+    <div class="emoji">🔢</div>
+    <h3>Saberes y pensamiento científico</h3>
+    <p>Contamos, sumamos, restamos,
+    conocemos figuras y exploramos la naturaleza.</p>
+</div>
+
+<div class="tarjeta">
+    <div class="emoji">🌎</div>
+    <h3>Ética, naturaleza y sociedades</h3>
+    <p>Conocemos nuestro entorno,
+    animales, plantas, comunidad y valores.</p>
+</div>
+
+<div class="tarjeta">
+    <div class="emoji">❤️</div>
+    <h3>De lo humano y lo comunitario</h3>
+    <p>Aprendemos sobre emociones,
+    convivencia, cuerpo humano y cuidado personal.</p>
+</div>
+
+<div class="tarjeta">
+    <div class="emoji">🎨</div>
+    <h3>Artes y creatividad</h3>
+    <p>Coloreamos, imaginamos,
+    dibujamos y creamos.</p>
+</div>
+
+<div class="tarjeta">
+    <div class="emoji">🎵</div>
+    <h3>Música</h3>
+    <p>Descubrimos sonidos, ritmos
+    y canciones.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ACTIVIDADES -->
+
+<section class="contenedor" id="actividades">
+
+<h2 class="titulo">✏️ ¡Vamos a practicar!</h2>
+
+<div class="actividad">
+    <div class="emoji">🍎</div>
+    <h3>Actividad 1: Las vocales</h3>
+    <p>¿Cuáles son las cinco vocales?</p>
+    <button onclick="vocales()">Descubrir respuesta</button>
+    <p id="vocalesRespuesta" class="mensaje"></p>
+</div>
+
+<div class="actividad">
+    <div class="emoji">🐶</div>
+    <h3>Actividad 2: Los animales</h3>
+    <p>¿Qué animal dice guau?</p>
+    <button onclick="animal('Perro')">🐶 Perro</button>
+    <button onclick="animal('Gato')">🐱 Gato</button>
+    <button onclick="animal('Vaca')">🐮 Vaca</button>
+    <p id="animalRespuesta" class="mensaje"></p>
+</div>
+
+<div class="actividad">
+    <div class="emoji">🎨</div>
+    <h3>Actividad 3: Los colores</h3>
+    <p>¿De qué color es el sol?</p>
+    <button onclick="color('Amarillo')">🟡 Amarillo</button>
+    <button onclick="color('Azul')">🔵 Azul</button>
+    <button onclick="color('Verde')">🟢 Verde</button>
+    <p id="colorRespuesta" class="mensaje"></p>
+</div>
+
+<div class="actividad">
+    <div class="emoji">🌱</div>
+    <h3>Actividad 4: Cuidemos la naturaleza</h3>
+    <p>¿Qué debemos hacer para cuidar las plantas?</p>
+    <button onclick="naturaleza('Regarlas')">💧 Regarlas</button>
+    <button onclick="naturaleza('Arrancarlas')">🌿 Arrancarlas</button>
+    <p id="naturalezaRespuesta" class="mensaje"></p>
+</div>
+
+</section>
+
+<!-- JUEGOS -->
+
+<section class="contenedor" id="juegos">
+
+<h2 class="titulo">🎮 ¡Zona de juegos!</h2>
+
+<div class="actividad">
+    <div class="emoji">➕</div>
+    <h3>Juego 1: ¡A sumar!</h3>
+    <p id="preguntaSuma">¿Cuánto es 2 + 3?</p>
+    <button class="opcion" onclick="sumar(5)">5</button>
+    <button class="opcion" onclick="sumar(6)">6</button>
+    <button class="opcion" onclick="sumar(4)">4</button>
+    <p id="respuestaSuma" class="mensaje"></p>
+    <button onclick="nuevaSuma()">Otra pregunta 🔄</button>
+</div>
+
+<div class="actividad">
+    <div class="emoji">➖</div>
+    <h3>Juego 2: ¡A restar!</h3>
+    <p>¿Cuánto es 8 - 3?</p>
+    <button class="opcion" onclick="restar(5)">5</button>
+    <button class="opcion" onclick="restar(4)">4</button>
+    <button class="opcion" onclick="restar(6)">6</button>
+    <p id="respuestaResta" class="mensaje"></p>
+</div>
+
+<div class="actividad">
+    <div class="emoji">🔢</div>
+    <h3>Juego 3: Cuenta los objetos</h3>
+    <p>🍎 🍎 🍎 🍎 🍎</p>
+    <p>¿Cuántas manzanas hay?</p>
+    <button class="opcion" onclick="contar(4)">4</button>
+    <button class="opcion" onclick="contar(5)">5</button>
+    <button class="opcion" onclick="contar(6)">6</button>
+    <p id="respuestaConteo" class="mensaje"></p>
+</div>
+
+<div class="actividad">
+    <div class="emoji">🧠</div>
+    <h3>Juego 4: Adivina la figura</h3>
+    <p>Tengo tres lados y tres esquinas. ¿Quién soy?</p>
+    <button onclick="figura('Cuadrado')">Cuadrado</button>
+    <button onclick="figura('Triángulo')">Triángulo</button>
+    <button onclick="figura('Círculo')">Círculo</button>
+    <p id="respuestaFigura" class="mensaje"></p>
+</div>
+
+<div class="actividad">
+    <div class="emoji">💬</div>
+    <h3>Juego 5: Forma una palabra</h3>
+    <p>¿Qué palabra se forma con estas letras?</p>
+    <h2>M - A - M - Á</h2>
+    <input type="text" id="palabra" placeholder="Escribe aquí">
+    <br>
+    <button onclick="revisarPalabra()">Comprobar</button>
+    <p id="respuestaPalabra" class="mensaje"></p>
+</div>
+
+<div class="actividad">
+    <div class="emoji">💖</div>
+    <h3>Juego 6: Conocemos las emociones</h3>
+    <p>¿Qué podemos hacer cuando un compañero está triste?</p>
+    <button onclick="emocion('Ayudarlo')">Escucharlo y ayudarlo</button>
+    <button onclick="emocion('Ignorarlo')">Ignorarlo</button>
+    <p id="respuestaEmocion" class="mensaje"></p>
+</div>
+
+</section>
+
+<div class="separador">
+    <h2>🌟 ¡Lo estás haciendo muy bien!</h2>
+    <p>Cada día aprendemos algo nuevo.</p>
+    <p>¡Nunca dejes de descubrir! 📚</p>
+</div>
+
+<footer>
+    <h2>🌈 Aprendo jugando</h2>
+    <p>Página educativa para primer grado de primaria.</p>
+    <p>¡Gracias por aprender con nosotros! ❤️</p>
+</footer>
+
+<script>
+
+function vocales() {
+    document.getElementById("vocalesRespuesta").innerHTML =
+    "¡Muy bien! Las vocales son A, E, I, O, U. ⭐";
+}
+
+function animal(r) {
+    let mensaje = r === "Perro" ?
+    "¡Correcto! El perro dice guau. 🐶" :
+    "¡Inténtalo nuevamente! 😊";
+    document.getElementById("animalRespuesta").innerHTML = mensaje;
+}
+
+function color(r) {
+    let mensaje = r === "Amarillo" ?
+    "¡Excelente! El sol es amarillo. ☀️" :
+    "¡Sigue intentando! 🌈";
+    document.getElementById("colorRespuesta").innerHTML = mensaje;
+}
+
+function naturaleza(r) {
+    let mensaje = r === "Regarlas" ?
+    "¡Muy bien! Las plantas necesitan agua. 🌱" :
+    "¡Cuidemos las plantas! 💚";
+    document.getElementById("naturalezaRespuesta").innerHTML = mensaje;
+}
+
+function sumar(r) {
+    document.getElementById("respuestaSuma").innerHTML =
+    r === 5 ? "¡Correcto! ¡Eres genial! 🎉" :
+    "¡Inténtalo otra vez! 😊";
+}
+
+function restar(r) {
+    document.getElementById("respuestaResta").innerHTML =
+    r === 5 ? "¡Muy bien! 8 - 3 = 5. ⭐" :
+    "¡Sigue practicando! 💪";
+}
+
+function contar(r) {
+    document.getElementById("respuestaConteo").innerHTML =
+    r === 5 ? "¡Excelente! Hay cinco manzanas. 🍎" :
+    "¡Cuenta nuevamente! 😊";
+}
+
+function figura(r) {
+    document.getElementById("respuestaFigura").innerHTML =
+    r === "Triángulo" ?
+    "¡Correcto! El triángulo tiene tres lados. 🔺" :
+    "¡Inténtalo nuevamente! ⭐";
+}
+
+function revisarPalabra() {
+    let p = document.getElementById("palabra").value.trim().toLowerCase();
+    document.getElementById("respuestaPalabra").innerHTML =
+    p === "mamá" || p === "mama" ?
+    "¡Muy bien! Formaste la palabra MAMÁ. ❤️" :
+    "¡Inténtalo otra vez!";
+}
+
+function emocion(r) {
+    document.getElementById("respuestaEmocion").innerHTML =
+    r === "Ayudarlo" ?
+    "¡Muy bien! Debemos ser amables y solidarios. 💖" :
+    "Es importante apoyar a nuestros compañeros. 😊";
+}
+
+let numero1 = 2;
+let numero2 = 3;
+
+function nuevaSuma() {
+    numero1 = Math.floor(Math.random() * 5) + 1;
+    numero2 = Math.floor(Math.random() * 5) + 1;
+
+    document.getElementById("preguntaSuma").innerHTML =
+    "¿Cuánto es " + numero1 + " + " + numero2 + "?";
+
+    let correcta = numero1 + numero2;
+    let opciones = [correcta, correcta + 1, Math.max(0, correcta - 1)];
+
+    opciones.sort(() => Math.random() - 0.5);
+
+    let botones = document.querySelectorAll(".opcion");
+
+    botones[0].innerText = opciones[0];
+    botones[0].setAttribute("onclick", "sumar(" + opciones[0] + ")");
+
+    botones[1].innerText = opciones[1];
+    botones[1].setAttribute("onclick", "sumar(" + opciones[1] + ")");
+
+    botones[2].innerText = opciones[2];
+    botones[2].setAttribute("onclick", "sumar(" + opciones[2] + ")");
+
+    window.respuestaCorrecta = correcta;
+}
+
+</script>
+
+</body>
+</html>
